@@ -1,52 +1,101 @@
-## 📌 Overview
-This repository contains a Power BI report (`power_bi_task3.pbix`) built around Shopify stock data. The data model is loaded and ready — the report canvas itself is currently **blank / work-in-progress**, so this repo also doubles as a base to build the dashboard out from.
+# # 📊 Shopify Stock Analysis using Power BI
 
-## 📂 Repository Contents
-```
-power_bi_task3.pbix     # Power BI report file
-README.md               # This file
-```
+## 📌 Project Overview
 
-## 🗃️ Data Model
+This project presents an interactive **Power BI dashboard for Shopify (SHOP) stock market analysis**.
 
-| Table | Description |
-|---|---|
-| `Shopify Stock` | Core table containing stock trading data (prices/volume). Exact columns are only viewable inside Power BI Desktop, since the model is stored in a compressed binary format. |
-| `Dim_Date` | Date dimension table intended for time-based analysis (trends, YoY/MoM comparisons, filtering). |
+The project analyzes historical Shopify stock market data to understand stock price movements, trading volume, and time-based trends.
 
-> ⚠️ No relationship is currently defined between `Shopify Stock` and `Dim_Date`. This needs to be created (recommended: one-to-many, `Dim_Date` → `Shopify Stock`) before building time-based visuals.
+The complete workflow includes:
 
-## 📊 Report Details
+- Data loading
+- Data inspection
+- Data cleaning
+- Data transformation
+- Date dimension creation
+- Data modeling
+- DAX calculations
+- Time-based analysis
+- Interactive data visualization
+- Power BI dashboard development
 
-| Property | Value |
-|---|---|
-| Pages | 1 (`Page 1`) |
-| Canvas size | 1920 × 1080 (16:9) |
-| Display mode | Fit to Page |
-| Theme | Fluent 2 (Preview) |
-| Visuals | None yet — blank canvas |
-
-## 🚀 Getting Started
-1. Clone this repo / download `power_bi_task3.pbix`.
-2. Open it in **Power BI Desktop**.
-3. Go to **Model view** and create the relationship between `Dim_Date` and `Shopify Stock`.
-4. Start adding visuals (see suggestions below).
-
-## ✅ Suggested Visuals / Next Steps
-- 📈 Line chart — stock price (Open/Close/High/Low) over time
-- 🧮 KPI cards — latest price, % change, volume
-- 📊 Bar chart — trading volume by date
-- 🎚️ Slicer — filter by date range (year/month)
-- ➕ DAX measures — daily % change, moving average, YTD performance
-
-## 🛠️ Tech Stack
-<p>
-  <img src="https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/DAX-217346?style=flat-square" />
-</p>
-
-## 📄 License
-This project is open-sourced for learning purposes. Feel free to fork and extend it.
+The main objective is to convert raw Shopify stock data into meaningful and interactive visual insights using **Microsoft Power BI**.
 
 ---
-<p align="center"><i>Built as part of a Power BI learning task.</i></p>
+
+# 🎯 Objectives
+
+The main objectives of this project are:
+
+- Analyze historical Shopify stock data.
+- Understand stock price movements over time.
+- Analyze opening, closing, high, and low prices.
+- Examine adjusted closing prices.
+- Analyze trading volume.
+- Identify monthly, quarterly, and yearly trends.
+- Create a dedicated Date Dimension for time-based analysis.
+- Apply DAX calculations for time intelligence.
+- Build an interactive Power BI dashboard.
+- Present stock market information in a clear and understandable format.
+
+---
+
+# 📂 Dataset
+
+The project uses historical stock market data for **Shopify (SHOP)**.
+
+The dataset contains daily stock market information.
+
+## Dataset Columns
+
+| Column | Description |
+|---|---|
+| Date | Date of stock trading |
+| Open | Opening stock price |
+| High | Highest stock price during the day |
+| Low | Lowest stock price during the day |
+| Close | Closing stock price |
+| Adj Close | Adjusted closing price |
+| Volume | Number of shares traded |
+
+---
+
+# 🛠️ Tools & Technologies
+
+The following tools and technologies were used:
+
+- **Microsoft Power BI**
+- **Power Query**
+- **DAX**
+- **Data Modeling**
+- **Data Visualization**
+- **Stock Market Data Analysis**
+
+---
+
+# 🔄 Complete Project Workflow
+
+```text
+Shopify Stock Dataset
+        ↓
+Data Import
+        ↓
+Data Inspection
+        ↓
+Data Cleaning
+        ↓
+Data Transformation
+        ↓
+Create Dim_Date Table
+        ↓
+Create Calendar Columns
+        ↓
+Create Relationships
+        ↓
+Create DAX Measures
+        ↓
+Build Visualizations
+        ↓
+Add Filters & Slicers
+        ↓
+Interactive Power BI Dashboard
